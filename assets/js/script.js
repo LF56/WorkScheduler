@@ -6,8 +6,13 @@ function displayDate(){
     },1000 )
 }
 function save(e){
-    console.log($(e.target).parent().siblings()[1].innerText)
+    var content = ($(e.target).parent().siblings()[1].innerText)
+    var id = ($(e.target).parent().siblings()[1].id)
+    console.log(id, content)
+   
+    localStorage.setItem(id,content)
 }
+
 
 
 //dividing function practice
