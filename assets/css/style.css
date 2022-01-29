@@ -23,23 +23,27 @@
 
 .description{
   white-space: pre-wrap;
+  border-style: solid;
+  border-color: rgb(42, 23, 161);
+  border-width: 2px;
 }
 
 .time-block{
   text-align: center;
+  vertical-align: left;
   border-radius: 15px;
 }
 
 .time-row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid rgb(255, 255, 255);;
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 2px dashed #380886;
 }
 
 .past {
@@ -61,11 +65,12 @@
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color: #d2a7f0;
   color: white;
+  font-size: 2rem;
 }
 
 .saveButton i:hover {
-  font-size: 20px;
+  font-size: 3rem;
   transition: all .3s ease-in-out;
 }
