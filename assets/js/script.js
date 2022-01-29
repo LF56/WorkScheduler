@@ -12,7 +12,13 @@ function save(e){
    
     localStorage.setItem(id,content)
 }
+function retrieve(){
+    var local = Object.entries(localStorage)
+    local.forEach(element => {
+        $(`#${element[0]}`).text(element[1].replace(/"/g, ''))
+    })
 
+}
 
 
 //dividing function practice
@@ -24,5 +30,5 @@ function save(e){
 // console.log(divide)
 
 
-
+retrieve();
 displayDate();
