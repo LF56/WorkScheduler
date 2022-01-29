@@ -5,6 +5,7 @@ function displayDate(){
 
     },1000 )
 }
+
 function save(e){
     var content = ($(e.target).parent().siblings()[1].innerText)
     var id = ($(e.target).parent().siblings()[1].id)
@@ -17,18 +18,7 @@ function retrieve(){
     local.forEach(element => {
         $(`#${element[0]}`).text(element[1].replace(/"/g, ''))
     })
-
 }
-
-
-//dividing function practice
-// function divideByTwo(number){
-//     var quotient = number/2
-//     return quotient
-// }
-// var divide = divideByTwo(6)
-// console.log(divide)
-
 
 retrieve();
 displayDate();
